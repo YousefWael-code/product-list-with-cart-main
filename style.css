@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Text", sans-serif;
+    font-style: normal;
+}
+
+:root {
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+    --rose50: hsl(20, 50%, 98%);
+    --rose100: hsl(13, 31%, 94%);
+    --rose300: hsl(14, 25%, 72%);
+    --rose400: hsl(7, 20%, 60%);
+    --rose500: hsl(12, 20%, 44%);
+    --rose900: hsl(14, 65%, 9%);
+}
+
+html, body {
+    display: grid;
+    background-color: var(--rose100);
+    flex-direction: column;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.waffle {
+    grid-area: waffle;
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+.brulee {
+    grid-area: brulee;
+    display: grid;
+}
+
+.macaron {
+    grid-area: macaron;
+    display: grid;
+}
+
+.tiramisu {
+    grid-area: tiramisu;
+    display: grid;
+}
+
+.pistacio {
+    grid-area: pistacio;
+    display: grid;
+}
+
+.meringue {
+    grid-area: meringue;
+    display: grid;
+}
+
+.velvet {
+    grid-area: velvet;
+    display: grid;
+}
+
+.brownie {
+    grid-area: brownie;
+    display: grid;
+}
+
+.pannacotta {
+    display: grid;
+    grid-area: pannacotta;
+}
+
+.cartdiv {
+    display: grid;
+    grid-area: cart;
+    background-color: var(--rose50);
+    padding: 2rem;
+    color: var(--red);
+    align-self: stretch;
+    grid-row: 1 / -1;
+    background: var(--rose50);
+    height: fit-content;
+    width: 100%;
+    height: auto;
+}
+
+.cartdiv img {
+    align-self: center;
+}
+
+.cartdiv h6 {
+    text-align: center;
+}
+
+.empty {
+    grid-area: empty;
+    display: grid;
+}
+
+.waffle, .brulee, .macaron, .tiramisu, .pistacio, .meringue, .velvet, .brownie, .pannacotta {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 100%;
+    line-height: 1.4rem;
+}
+
+.desert {
+    display: grid;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+h1 {
+    grid-area: heading;
+}
+
+h6{
+    color: var(--rose300);
+    margin-top: 1.6rem;
+    font-size: 100%;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.price {
+    color: var(--red);
+}
+
+.add {
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--rose50);
+    text-align: center;
+    justify-content: center;
+    border-radius: 5rem;
+    border: 0.01rem solid var(--rose300);
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: 700;
+    font-size: 8pt;
+    position: absolute;
+}
+
+.add:hover {
+    border: 0.01rem solid var(--rose500);
+    color: var(--rose500);
+}
+
+.thetext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minus , .plus{
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0.1rem solid white;
+    padding: 0.3rem;
+    border-radius: 50%;
+    box-sizing: content-box;
+    display: flex;
+}
+
+.details {
+    width: 70%;
+}
+
+.quantity {
+    color: var(--red);
+    display: inline;
+    font-weight: 700;
+}
+
+.quantityconfirmed {
+    color: var(--red);
+    display: inline;
+    font-weight: 700;
+}
+
+.priceperone {
+    margin: 0.3rem;
+}
+
+.priceperoneconfirmed {
+    margin: 0.3rem;
+}
+
+.crosscontainer {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.8rem 0rem;
+}
+
+.removeitem {
+    border: 0.05rem solid var(--rose900);
+    border-radius: 50%;
+    padding: 0.1rem;
+}
+
+.carbon-neutral {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 0.5rem 0rem;
+    background-color: var(--rose100);
+    margin: 1.2rem 0rem;
+    border-radius: 0.5rem;
+}
+
+.confirmationbtn {
+    display: none;
+    background-color: var(--red);
+    color: var(--rose100);
+    padding: 0.6rem;
+    border-radius: 5rem;
+}
+
+.totalprice {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+}
+
+.totalprice .number {
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+.removeitem:hover {
+    border: 0.05rem solid var(--rose900);
+    color: var(--rose900);
+    cursor: pointer;
+} 
+
+.crosscontainer {
+    display: none;
+}
+
+.noitemfound {
+    display: flex;
+}
+
+.noitemfoundtext {
+    display: flex;
+}
+
+.line2 {
+    display: none;
+}
+
+.spacing {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    color: var(--rose300);
+}
+
+.waffleconfirmed,
+.bruleeconfirmed,
+.macaronconfirmed,
+.tiramisuconfirmed,
+.pistacioconfirmed,
+.meringueconfirmed,
+.velvetconfirmed,
+.brownieconfirmed,
+.pannacottaconfirmed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.wholeprice {
+    display: none;
+    background-color: var(--rose100);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 1.3rem;
+}
+
+.card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.orderconfirmed {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    max-width: 40%;
+    width: 90%;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+.orderconfirmed h6 {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.thumbnail {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.5rem;
+}
+
+.confirmedinfo h5 {
+    margin-bottom: 0.3rem;
+}
+
+.confirmationprice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    background-color: var(--rose100);
+}
+
+.neworder {
+    width: 100%;
+    padding: 0.5rem 0rem;
+    background-color: var(--red);
+    border-radius: 5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--rose50);
+}
+
+.confirmationnumber {
+    font-size: 20pt;
+    font-weight: 700;
+}
+
+@media (min-width: 375px) and (max-width: 1439px) {
+    html, body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-areas:
+            "heading"
+            "waffle"
+            "brulee"
+            "macaron"
+            "tiramisu"
+            "pistacio"
+            "meringue"
+            "velvet"
+            "brownie"
+            "pannacotta"
+            "cart";
+        height: 100vh;
+    }
+
+    .cartdiv {
+        grid-area: cart;
+    }
+
+    .add {
+        bottom: 14.5%;
+        left: 40%;
+        width: 20%;
+        height: 7%;
+    }
+}
+
+@media (min-width: 1440px) {
+    html, body {
+        padding: 2rem;
+        gap: 2rem 1rem;
+        
+        /* grid-template-rows: auto auto auto auto; */
+        grid-template-rows: 2rem 20rem 20rem 20rem;
+        grid-template-columns: 17rem 17rem 17rem auto;
+        grid-template-areas:
+            "heading heading heading cart"
+            "waffle brulee macaron cart"
+            "tiramisu pistacio meringue ."
+            "velvet brownie pannacotta .";
+        white-space: nowrap;
+    }
+
+    .cartdiv {
+        max-height: 100%;
+        height: fit-content;
+    }
+
+    .add {
+        bottom: 9%;
+        left: 26%;
+        width: 48%;
+        height: 11%;
+    }
+}

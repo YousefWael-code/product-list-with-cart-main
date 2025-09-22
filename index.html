@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <h1>Desserts</h1>
+
+  <div class="waffle">
+
+    <img class="desert" src="./assets/images/image-waffle-desktop.jpg" alt="">
+
+    <h6>Waffle</h6>
+    <h3>Waffle with Berries</h3>
+    <h3 class="price">$6.50</h3>
+    <button class="add">
+      <div class="thetext">
+        <img class="cart" src="./assets/images/icon-add-to-cart.svg" alt="">
+        Add to Cart
+      </div>
+    </button>
+
+  </div>
+
+  <div class="brulee">
+
+    <img class="desert" src="./assets/images/image-creme-brulee-desktop.jpg" alt="">
+
+    <h6>Crème Brûlée</h6>
+    <h3>Vanilla Bean Crème Brûlée</h3>
+    <h3 class="price">$7.00</h3>
+    <button class="add">
+      <div class="thetext">
+        <img class="cart" src="./assets/images/icon-add-to-cart.svg" alt="">
+        Add to Cart
+      </div>
+    </button>
+
+  </div>
+
+  <div class="macaron">
+  
+    <img class="desert" src="./assets/images/image-macaron-desktop.jpg" alt="">
+    
+    <h6>Macaron</h6>
+    <h3>Macaron Mix of Five</h3>
+    <h3 class="price">$8.00</h3>
+    <button class="add">
+      <div class="thetext">
+        <img class="cart" src="./assets/images/icon-add-to-cart.svg" alt="">
+        Add to Cart
+      </div>
+    </button>
+
+  </div>
+
+  <div class="tiramisu">
+
+    <img class="desert" src="./assets/images/image-tiramisu-desktop.jpg" alt="">
+    
+    <h6>Tiramisu</h6>
+    <h3>Classic Tiramisu</h3>
+    <h3 class="price">$5.50</h3>
+    <button class="add">
+      <div class="thetext">
+        <img class="cart" src="./assets/images/icon-add-to-cart.svg" alt="">
+        Add to Cart
+      </div>
+    </button>
+
+  </div>
+
+  <div class="pistacio">
+
+    <img class="desert" src="./assets/images/image-baklava-desktop.jpg" alt="">
+
+    <h6>Baklava</h6>
+    <h3>Pistachio Baklava</h3>
+    <h3 class="price">%4.00</h3>
+    <button class="add">
+      <div class="thetext">
+        <img class="cart" src="./assets/images/icon-add-to-cart.svg" alt="">
+        Add to Cart
+      </div>
+    </button>
+
+  </div>
+
+  <div class="meringue">
+
+    <img class="desert" src="./assets/images/image-meringue-desktop.jpg" alt="">
+
+    <h6>Meringue</h6>
+    <h3>Lemon Meringue Pie</h3>
+    <h3 class="price">$5.00</h3>
+    <button class="add">
+      <div class="thetext">
+        <img class="cart" src="./assets/images/icon-add-to-cart.svg" alt="">
+        Add to Cart
+      </div>
+    </button>
+
+  </div>
+
+  <div class="velvet">
+
+    <img class="desert" src="./assets/images/image-cake-desktop.jpg" alt="">
+
+    <h6>Cake</h6>
+    <h3>Red Velvet Cake</h3>
+    <h3 class="price">$4.50</h3>
+    <button class="add">
+      <div class="thetext">
+        <img class="cart" src="./assets/images/icon-add-to-cart.svg" alt="">
+        Add to Cart
+      </div>
+    </button>
+
+  </div>
+
+  <div class="brownie">
+
+    <img class="desert" src="./assets/images/image-brownie-desktop.jpg" alt="">
+
+    <h6>Brownie</h6>
+    <h3>Salted Caramel Brownie</h3>
+    <h3 class="price">$4.50</h3>
+    <button class="add">
+      <div class="thetext">
+        <img class="cart" src="./assets/images/icon-add-to-cart.svg" alt="">
+        Add to Cart
+      </div>
+    </button>
+
+  </div>
+
+  <div class="pannacotta">
+
+    <img class="desert" src="./assets/images/image-panna-cotta-desktop.jpg" alt="">
+
+    <h6>Panna Cotta</h6>
+    <h3>Vanilla Panna Cotta</h3>
+    <h3 class="price">$6.50</h3>
+    <button class="add"> 
+      <div class="thetext">
+        <img class="cart" src="./assets/images/icon-add-to-cart.svg" alt="">
+        Add to Cart
+      </div>
+    </button>
+
+  </div>
+
+  <div class="cartdiv">
+
+    <h2>Your Cart ()</h2>
+    <img class="noitemfound" src="./assets/images/illustration-empty-cart.svg" alt="">
+    <h6 class="noitemfoundtext">Your added items will appear here</h6>
+
+
+    <div class="crosscontainer">
+      <div class="details">
+        <h4>Waffle with Berries</h4>
+        <p><span class="quantity">0x</span> <span class="priceperone">@$6.50</span> <span class="priceofall">0.00$</span></p>
+      </div>
+      <img class="removeitem" src="./assets/images/icon-remove-item.svg" alt="">
+    </div>
+
+    <hr class="line">
+
+    <div class="crosscontainer">
+      <div class="details">
+        <h4>Vanilla Bean Creme Brulee</h4>
+        <p><span class="quantity">0x</span> <span class="priceperone">@$7.00</span> <span class="priceofall">0.00$</span>
+        </p>
+      </div>
+      <img class="removeitem" src="./assets/images/icon-remove-item.svg" alt="">
+    </div>
+    
+    <hr class="line">
+
+    <div class="crosscontainer">
+      <div class="details">
+        <h4>Macaron Mix of Five</h4>
+        <p><div class="quantity">0x</div> <span class="priceperone">@$8.00</span> <span class="priceofall">0.00$</span>
+        </p>
+      </div>
+      <img class="removeitem" src="./assets/images/icon-remove-item.svg" alt="">
+    </div>
+    
+    <hr class="line">
+
+    <div class="crosscontainer">
+      <div class="details">
+        <h4>Classic Tiramisu</h4>
+        <p><span class="quantity">0x</span> <span class="priceperone">@$5.50</span> <span class="priceofall">0.00$</span>
+        </p>
+      </div>
+      <img class="removeitem" src="./assets/images/icon-remove-item.svg" alt="">
+    </div>
+    
+    <hr class="line">
+
+    <div class="crosscontainer">
+      <div class="details">
+        <h4>Pistachio Baklava</h4>
+        <p><span class="quantity">0x</span> <span class="priceperone">@$4.00</span> <span class="priceofall">0.00$</span>
+        </p>
+      </div>
+      <img class="removeitem" src="./assets/images/icon-remove-item.svg" alt="">
+    </div>
+    
+    <hr class="line">
+
+    <div class="crosscontainer">
+      <div class="details">
+        <h4>Lemon Meringue Pie</h4>
+        <p><span class="quantity">0x</span> <span class="priceperone">@$5.00</span> <span class="priceofall">0.00$</span>
+        </p>
+      </div>
+      <img class="removeitem" src="./assets/images/icon-remove-item.svg" alt="">
+    </div>
+    
+    <hr class="line">
+
+    <div class="crosscontainer">
+      <div class="details">
+        <h4>Red Velvet Cake</h4>
+        <p><span class="quantity">0x</span> <span class="priceperone">@$4.50</span> <span class="priceofall">0.00$</span>
+        </p>
+      </div>
+      <img class="removeitem" src="./assets/images/icon-remove-item.svg" alt="">
+    </div>
+    
+    <hr class="line">
+
+    <div class="crosscontainer">
+      <div class="details">
+        <h4>Salted Caramel Brownie</h4>
+        <p><span class="quantity">0x</span> <span class="priceperone">@$5.50</span> <span class="priceofall">0.00$</span>
+        </p>
+      </div>
+      <img class="removeitem" src="./assets/images/icon-remove-item.svg" alt="">
+    </div>
+    
+    <hr class="line">
+
+    <div class="crosscontainer">
+      <div class="details">
+        <h4>Vanilla Panna Cotta</h4>
+        <p><span class="quantity">0x</span> <span class="priceperone">@$6.50</span> <span class="priceofall">0.00$</span>
+        </p>
+      </div>
+      <img class="removeitem" src="./assets/images/icon-remove-item.svg" alt="">
+    </div>
+    
+    <hr class="line">
+
+    <div class="totalprice">
+
+      Order Total
+
+      <div class="number">$0</div>
+
+    </div>
+
+    <div class="carbon-neutral">
+      <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+      <p>This is a <b>carbon-neutral</b> delivery</p>
+    </div>
+
+    <button class="confirmationbtn">Confirm Order</button>
+
+  </div>
+
+  <div class="empty"></div>
+
+  
+  <div class="card">
+
+    <div class="orderconfirmed">
+    
+      <img src="./assets/images/icon-order-confirmed.svg" alt="">
+      <h1>Order Confirmed</h1>
+      <p class="spacing">We hope you enjoy your food!</p>
+
+      <div class="wholeprice">
+        <div class="waffleconfirmed">
+          <img class="thumbnail" src="./assets/images/image-waffle-thumbnail.jpg" alt="">
+          <div class="confirmedinfo">
+            <h5>Waffle with Berries</h5>
+            <p><span class="quantityconfirmed">0x</span> <span class="priceperoneconfirmed">@$6.50</span></p>
+          </div>
+        </div>
+        <span class="priceofallconfirmed">0.00$</span>
+      </div>
+
+      <hr class="line2">
+
+      <div class="wholeprice">
+        <div class="bruleeconfirmed">
+          <img class="thumbnail" src="./assets/images/image-creme-brulee-thumbnail.jpg" alt="">
+          <div class="confirmedinfo">
+            <h5>Vanilla Bean Creme Brulee</h5>
+            <p><span class="quantityconfirmed">0x</span> <span class="priceperoneconfirmed">@$7.00</span></p>
+          </div>
+        </div>
+        <span class="priceofallconfirmed">0.00$</span>
+      </div>
+
+      <hr class="line2">
+
+      <div class="wholeprice">
+        <div class="macaronconfirmed">
+          <img class="thumbnail" src="./assets/images/image-macaron-thumbnail.jpg" alt="">
+          <div class="confirmedinfo">
+            <h5>Macaron Mix of Five</h5>
+            <p><span class="quantityconfirmed">0x</span> <span class="priceperoneconfirmed">@$8.00</span></p>
+          </div>
+        </div>
+        <span class="priceofallconfirmed">0.00$</span>
+      </div>
+
+      <hr class="line2">
+
+      <div class="wholeprice">
+        <div class="tiramisuconfirmed">
+          <img class="thumbnail" src="./assets/images/image-tiramisu-thumbnail.jpg" alt="">
+          <div class="confirmedinfo">
+            <h5>Classic Tiramisu</h5>
+            <p><span class="quantityconfirmed">0x</span> <span class="priceperoneconfirmed">@$5.50</span></p>
+          </div>
+        </div>
+        <span class="priceofallconfirmed">0.00$</span>
+      </div>
+
+      <hr class="line2">
+
+      <div class="wholeprice">
+        <div class="pistacioconfirmed">
+          <img class="thumbnail" src="./assets/images/image-baklava-thumbnail.jpg" alt="">
+          <div class="confirmedinfo">
+            <h5>Pistachio Baklava</h5>
+            <p><span class="quantityconfirmed">0x</span> <span class="priceperoneconfirmed">@$4.00</span></p>
+          </div>
+        </div>
+        <span class="priceofallconfirmed">0.00$</span>
+      </div>
+
+      <hr class="line2">
+
+      <div class="wholeprice">
+        <div class="meringueconfirmed">
+          <img class="thumbnail" src="./assets/images/image-meringue-thumbnail.jpg" alt="">
+          <div class="confirmedinfo">
+            <h5>Lemon Meringue Pie</h5>
+            <p><span class="quantityconfirmed">0x</span> <span class="priceperoneconfirmed">@$5.00</span></p>
+          </div>
+        </div>
+        <span class="priceofallconfirmed">0.00$</span>
+      </div>
+
+      <hr class="line2">
+
+      <div class="wholeprice">
+        <div class="velvetconfirmed">
+          <img class="thumbnail" src="./assets/images/image-cake-thumbnail.jpg" alt="">
+          <div class="confirmedinfo">
+            <h5>Red Velvet Cake</h5>
+            <p><span class="quantityconfirmed">0x</span> <span class="priceperoneconfirmed">@$4.50</span></p>
+          </div>
+        </div>
+        <span class="priceofallconfirmed">0.00$</span>
+      </div>
+
+      <hr class="line2">
+
+      <div class="wholeprice">
+        <div class="brownieconfirmed">
+          <img class="thumbnail" src="./assets/images/image-brownie-thumbnail.jpg" alt="">
+          <div class="confirmedinfo">
+            <h5>Salted Caramel Brownie</h5>
+            <p><span class="quantityconfirmed">0x</span> <span class="priceperoneconfirmed">@$5.50</span></p>
+          </div>
+        </div>
+        <span class="priceofallconfirmed">0.00$</span>
+      </div>
+
+      <hr class="line2">
+
+      <div class="wholeprice">
+        <div class="pannacottaconfirmed">
+          <img class="thumbnail" src="./assets/images/image-panna-cotta-thumbnail.jpg" alt="">
+          <div class="confirmedinfo">
+            <h5>Vanilla panna cotta</h5>
+            <p><span class="quantityconfirmed">0x</span> <span class="priceperoneconfirmed">@$6.50</span></p>
+          </div>
+        </div>
+        <span class="priceofallconfirmed">0.00$</span>  
+      </div>
+
+      <hr class="line2">
+
+      <div class="confirmationprice">
+      
+        Order Total
+      
+        <div class="confirmationnumber">$0</div>
+      
+      </div>
+
+      <button class="neworder">Start New Order</button>
+  
+    </div>
+
+    
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">MindTensor</a>.
+  </div> -->
+  
+  <script src="script.js"></script>
+</body>
+</html>
